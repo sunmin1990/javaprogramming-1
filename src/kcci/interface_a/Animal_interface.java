@@ -22,7 +22,7 @@ class Cat implements Animal{
 		System.out.println("meow meow");
 	}
 }
-public class Test3 {
+public class Animal_interface {
 	static void test(Animal a) {
 		a.breath();
 	}
