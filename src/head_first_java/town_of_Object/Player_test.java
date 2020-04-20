@@ -1,4 +1,4 @@
-package head_first_java;
+package head_first_java.town_of_Object;
 
 class TapeDeck{
 	boolean canRecord = false; //洹몃깷 珥덇린�긽�깭媛� false�씤寃� 肉�.
