@@ -1,4 +1,4 @@
-package Generic_ex;
+package kcci.Generic;
 
 class Box <T extends Number>{ 
 	//인스턴스 생성시 타입 인자로 Number또는 이를 상속하는 클래스만 올수있음

@@ -1,4 +1,4 @@
-package Generic_ex;
+package kcci.Generic;
 
 interface Eatable{
 	public String eat();

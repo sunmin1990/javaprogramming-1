@@ -1,4 +1,4 @@
-package Generic_a;
+package kcci.Generic;
 
 import java.util.ArrayList; //쓸때 알아서 되니까 첨부터 쓸필요 없음.
 

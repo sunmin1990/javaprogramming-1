@@ -1,4 +1,4 @@
-package Generic_a;
+package kcci.Generic;
 
 class Animal<T>{ //제네릭화 된 클래스 입니당 (원하는 타입 집어넣으세요) = 캐스팅 하지 않고 바로 쓸 수 이씀.
 	// 일반화 형태의 기능을 제공하는구나를 딱 알아채야 함.

@@ -1,4 +1,4 @@
-package Generic_a;
+package kcci.Generic;
 
 
 class Box2<T>{

@@ -1,6 +1,6 @@
-package Generic_ex;
+package kcci.Generic;
 
-class Box2<T>{
+class Box22<T>{
 	private T ob;
 	
 	public void set(T o) {

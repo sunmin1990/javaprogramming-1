@@ -1,4 +1,4 @@
-package Generic_a;
+package kcci.Generic;
 
 public class GenericMethodBoxMaker {
 	static <E> void printArr(E[] arr) {

@@ -1,8 +1,8 @@
-package Generic_a;
+package kcci.Generic;
 
 import java.util.ArrayList;
 
-class Box<T>{
+class Box111<T>{
 	private T t;
 	public void add(T t) {
 		this.t = t;
@@ -27,9 +27,9 @@ class MyArr<T>{
 public class oneMore_Generic {
 
 	public static void main(String[] args) {
-		Box<Integer> b1 = new Box<Integer>();
+		Box111<Integer> b1 = new Box111<Integer>();
 		b1.add(new Integer(2));
-		Box<String> s1 = new Box<String>();
+		Box111<String> s1 = new Box111<String>();
 		s1.add("Hello Java");
 		System.out.println(b1.get());
 		System.out.println(s1.get());
