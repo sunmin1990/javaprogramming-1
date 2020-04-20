@@ -19,6 +19,13 @@ public class UpperBounded_w {
 			s.draw();
 		}
 	}
+	
+//	static <T extends Shape> void drawShapes(List<T> lists) {
+//		for (Shape s : lists) {
+//			s.draw();
+//		}
+//	}
+	
 	public static void main(String[] args) {
 		List<Rectangle> list1 = new ArrayList<Rectangle>();
 		list1.add(new Rectangle());
