@@ -1,7 +1,7 @@
-package Being_Compiler;
+package head_first_java;
 
 class TapeDeck{
-	boolean canRecord = false; //그냥 초기상태가 false인것 뿐.
+	boolean canRecord = false; //洹몃깷 珥덇린�긽�깭媛� false�씤寃� 肉�.
 	
 	void playTape() {
 		System.out.println("tape playing");

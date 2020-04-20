@@ -1,10 +1,10 @@
-package GameLauncher;
+package head_first_java;
 
 public class Player {
-	int number=0; // Player ì´ˆê¸°í™” ë³€ìˆ˜
+	int number=0; // Player ì´ˆê¸°?™” ë³??ˆ˜
 	
 	public void guess() {
 		number = (int) (Math.random()*10);
-		// ë‚œìˆ˜ ìƒì„± ë©”ì†Œë“œ 
+		// ?‚œ?ˆ˜ ?ƒ?„± ë©”ì†Œ?“œ 
 	}
 }

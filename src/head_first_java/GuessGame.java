@@ -1,49 +1,49 @@
-package GameLauncher;
+package head_first_java;
 
 public class GuessGame {
 	Player p1;
 	Player p2;
 	Player p3;
-	//player객체 세개를 저장하기 위한 인스턴스 변수 세
+	//player媛앹껜 �꽭媛쒕�� ���옣�븯湲� �쐞�븳 �씤�뒪�꽩�뒪 蹂��닔 �꽭
 	
 	public void startGame() {
-		p1 = new Player(); //player객체 생성 > player인스턴스 변수 세개에 대
+		p1 = new Player(); //player媛앹껜 �깮�꽦 > player�씤�뒪�꽩�뒪 蹂��닔 �꽭媛쒖뿉 ��
 		p2 = new Player();
 		p3 = new Player();
 		
-		int guessp1 = 0; //player객체 세개에서 찍은 숫자를 저장하기 위한 변
+		int guessp1 = 0; //player媛앹껜 �꽭媛쒖뿉�꽌 李띿� �닽�옄瑜� ���옣�븯湲� �쐞�븳 蹂�
 		int guessp2 = 0;
 		int guessp3 = 0;
 		
-		boolean p1isRight = false; //세 선수가 찍은 숫자가 맞는지 여부를 저장하기 위한 변
+		boolean p1isRight = false; //�꽭 �꽑�닔媛� 李띿� �닽�옄媛� 留욌뒗吏� �뿬遺�瑜� ���옣�븯湲� �쐞�븳 蹂�
 		boolean p2isRight = false;
 		boolean p3isRight = false;
 		
 		int targetNumber = (int) (Math.random()*10);
-		// 선수들이 맞출 숫자 생
-		System.out.println("0이상 9 이하의 숫자를 맞춰 보세요");
+		// �꽑�닔�뱾�씠 留욎텧 �닽�옄 �깮
+		System.out.println("0�씠�긽 9 �씠�븯�쓽 �닽�옄瑜� 留욎떠 蹂댁꽭�슂");
 		
 		while(true) {
-			System.out.println("맞춰야 할 숫자는"+targetNumber+"입니다.");
+			System.out.println("留욎떠�빞 �븷 �닽�옄�뒗"+targetNumber+"�엯�땲�떎.");
 			
-			p1.guess(); // 선수별 guess메소드 호출
+			p1.guess(); // �꽑�닔蹂� guess硫붿냼�뱶 �샇異�
 			p2.guess();
 			p3.guess();
 			
 			
-			// 각 객체의 인스턴스 변수에 접근해 각 선수가 찍은 숫자를 알아냄.
-			// 맞추기 전까지 나오는 결과화
+			// 媛� 媛앹껜�쓽 �씤�뒪�꽩�뒪 蹂��닔�뿉 �젒洹쇳빐 媛� �꽑�닔媛� 李띿� �닽�옄瑜� �븣�븘�깂.
+			// 留욎텛湲� �쟾源뚯� �굹�삤�뒗 寃곌낵�솕
 			guessp1 = p1.number;
-			System.out.println("1번 선수가 찍은 숫자 :"+guessp1);
+			System.out.println("1踰� �꽑�닔媛� 李띿� �닽�옄 :"+guessp1);
 		
 			guessp2 = p2.number;
-			System.out.println("2번 선수가 찍은 숫자 :"+guessp2);
+			System.out.println("2踰� �꽑�닔媛� 李띿� �닽�옄 :"+guessp2);
 			
 			guessp3 = p3.number;
-			System.out.println("3번 선수가 찍은 숫자 :"+guessp3);
+			System.out.println("3踰� �꽑�닔媛� 李띿� �닽�옄 :"+guessp3);
 			
 			
-			//각 선수가 찍은 숫자 중에서 맞춘 숫자가 있는지 확인. 맞춘선수가 있으면 true로 저
+			//媛� �꽑�닔媛� 李띿� �닽�옄 以묒뿉�꽌 留욎텣 �닽�옄媛� �엳�뒗吏� �솗�씤. 留욎텣�꽑�닔媛� �엳�쑝硫� true濡� ��
 			if(guessp1==targetNumber) {
 				p1isRight = true;
 			}
@@ -54,15 +54,15 @@ public class GuessGame {
 				p3isRight = true;
 			}
 			if (p1isRight||p2isRight||p3isRight) {
-			//1번, 2번, 3번 선수중 한명이라도 맞으면 출
-				System.out.println("맞춘 선수가 있습니다.");
-				System.out.println("1번 선수 :"+p1isRight);
-				System.out.println("2번 선수 :"+p2isRight);
-				System.out.println("3번 선수 :"+p3isRight);
-				System.out.println("게임 끝");
-				break; // 누구하나 맞췄으니까 게임 끝! (while 종료)
+			//1踰�, 2踰�, 3踰� �꽑�닔以� �븳紐낆씠�씪�룄 留욎쑝硫� 異�
+				System.out.println("留욎텣 �꽑�닔媛� �엳�뒿�땲�떎.");
+				System.out.println("1踰� �꽑�닔 :"+p1isRight);
+				System.out.println("2踰� �꽑�닔 :"+p2isRight);
+				System.out.println("3踰� �꽑�닔 :"+p3isRight);
+				System.out.println("寃뚯엫 �걹");
+				break; // �늻援ы븯�굹 留욎톬�쑝�땲源� 寃뚯엫 �걹! (while 醫낅즺)
 			} else {
-				System.out.println("다시 시도해야 합니다.");
+				System.out.println("�떎�떆 �떆�룄�빐�빞 �빀�땲�떎.");
 			} //if-else
 		}//loop
 	}//method
