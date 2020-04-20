@@ -1,4 +1,4 @@
-package Array_list;
+package kcci.array_A;
 
 import java.util.ArrayList;
 
