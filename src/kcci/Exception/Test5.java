@@ -1,5 +1,6 @@
 package kcci.Exception;
 
+import java.io.IOException;
 
 class MyClass{
 	void method() throws IOException{
