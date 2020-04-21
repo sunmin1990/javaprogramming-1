@@ -1,4 +1,4 @@
-package frameWork_collection;
+package kcci.frameWork_collection;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -34,12 +34,12 @@ public class IteratorCollection {
 		
 		while(Itr.hasNext()) { 
 			String str = Itr.next();
-			if(inx==2) {
+			if(inx==2) {  // 인덱스 2번만 리무브하도록 지정해보았다.
 				Itr.remove();
 			}
 			else {
 				al.add(str);
-				System.out.println(inx);
+			System.out.println(inx);
 			}
 			inx++;
 			
